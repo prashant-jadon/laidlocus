@@ -19,7 +19,8 @@ connectDB();
 
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT,console.log(`Server Running on ${PORT}` ));
 
 app.use('/api/laidlocus/auth',require('./routes/user'));
+app.use('/api/taskCreate',require('./routes/taskcreate'));
