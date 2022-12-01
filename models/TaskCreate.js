@@ -32,6 +32,14 @@ const TaskSchema = new mongoose.Schema({
     createdAt:{
         type: Date,
         default: Date.now
+    },
+    email:{
+        type: String,
+        require: true
+    },
+    name:{
+        type: String,
+        require: true
     }
 });
 

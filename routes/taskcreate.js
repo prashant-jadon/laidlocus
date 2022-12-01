@@ -11,7 +11,9 @@ router.post('/', auth, async(req,res,next)=>{
             location: req.body.location,
             workType : req.body.workType,
             basePrice: req.body.basePrice,
-            user: req.body.id
+            user: req.body.id,
+            email: req.body.email,
+            name:req.body.name
         });
         if(!taskAdd){
             return res.status(400).json({
